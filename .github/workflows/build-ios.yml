@@ -20,12 +20,6 @@ jobs:
         with:
           xcode-version: latest-stable  # Adjust if Broke requires a different version
 
-      # Step 3: Install CocoaPods dependencies
-      - name: Install dependencies
-        run: |
-          sudo gem install cocoapods
-          pod install --repo-update
-
       # Step 4: Build the app
       - name: Build .ipa
         run: |
