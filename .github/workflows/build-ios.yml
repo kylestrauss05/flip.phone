@@ -24,11 +24,12 @@ jobs:
       - name: Build .ipa
         run: |
           xcodebuild \
-            -workspace Broke.xcworkspace \
+            -project Broke.xcodeproj \
             -scheme Broke \
             -sdk iphoneos \
             -configuration Release \
             -archivePath $PWD/build/Broke.xcarchive archive
+
 
           xcodebuild \
             -exportArchive \
