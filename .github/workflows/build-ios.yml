@@ -26,9 +26,10 @@ jobs:
           xcodebuild \
             -project Broke.xcodeproj \
             -scheme Broke \
-            -sdk iphoneos \
             -configuration Release \
+            -destination "generic/platform=iOS" \
             -archivePath $PWD/build/Broke.xcarchive archive
+
 
 
           xcodebuild \
