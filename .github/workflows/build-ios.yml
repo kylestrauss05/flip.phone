@@ -15,7 +15,7 @@ jobs:
     - name: Set up Xcode
       uses: maxim-lobanov/setup-xcode@v1
       with:
-        xcode-version: 26.1.1
+        xcode-version: 26
 
     - name: Build and archive
       env:
